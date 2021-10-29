@@ -1,0 +1,132 @@
+.app {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+.row-holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+.photoHolder {
+  width: 524px;
+  height: 263px;
+}
+.imageDescription {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.photo {
+  width: 300px;
+  height: 100%;
+  background-color: brown;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image0 {
+  background-image: url(../images/thumb-assets/thumb_0000_thumb0_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image1 {
+  background-image: url(../images/thumb-assets/thumb_0009_thumb1_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image2 {
+  background-image: url(../images/thumb-assets/thumb_0008_thumb2_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image3 {
+  background-image: url(../images/thumb-assets/thumb_0007_thumb3_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image4 {
+  background-image: url(../images/thumb-assets/thumb_0006_thumb4_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image5 {
+  background-image: url(../images/thumb-assets/thumb_0005_thumb5_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image6 {
+  background-image: url(../images/thumb-assets/thumb_0004_thumb6_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image7 {
+  background-image: url(../images/thumb-assets/thumb_0003_thumb7_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image8 {
+  background-image: url(../images/thumb-assets/thumb_0002_thumb8_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image9 {
+  background-image: url(../images/thumb-assets/thumb_0001_thumb9_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.description {
+  width: 224px;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button-holder {
+  display: flex;
+}
+.button {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-holder .button {
+  margin-left: 10px;
+}
+.button {
+  display: none;
+}
+.photo:hover .view,
+.edit,
+.delete {
+  display: flex;
+}
+
+@media screen and(max-width: 960px) {
+  .photo .view {
+    display: flex;
+  }
+}

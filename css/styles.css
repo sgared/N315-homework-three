@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.navHolder {
+  position: fixed;
+  left: 10px;
+}
+.navHolder .bars {
+  display: none;
+}
+.navHolder .bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: black;
+  height: 3px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.navHolder .bar.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.navHolder .bar.active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
+}
+.navHolder .bar.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
+}
+.navHolder .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 50px;
+  width: 100vw;
+  overflow: hidden;
+  margin-left: -10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: height 0.5s, opacity 0.5s ease-in;
+  transition: height 0.5s, opacity 0.5s ease-in;
+}
+.navHolder .links a {
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+}
+.navHolder .links.active {
+  height: 100vh;
+  opacity: 1;
+}
+
+.nva-Hider {
+  width: 100%;
+  height: 60px;
+}
+
+@media screen and (max-width: 960px) {
+  .navHolder .bars {
+    display: block;
+  }
+  .navHolder .links {
+    height: 0;
+    opacity: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.home {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 300px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.app {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+.row-holder {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.photoHolder {
+  width: 524px;
+  height: 263px;
+}
+
+.imageDescription {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.photo {
+  width: 300px;
+  height: 100%;
+  background-color: brown;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image0 {
+  background-image: url(../images/thumb-assets/thumb_0000_thumb0_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image1 {
+  background-image: url(../images/thumb-assets/thumb_0009_thumb1_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image2 {
+  background-image: url(../images/thumb-assets/thumb_0008_thumb2_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image3 {
+  background-image: url(../images/thumb-assets/thumb_0007_thumb3_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image4 {
+  background-image: url(../images/thumb-assets/thumb_0006_thumb4_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image5 {
+  background-image: url(../images/thumb-assets/thumb_0005_thumb5_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image6 {
+  background-image: url(../images/thumb-assets/thumb_0004_thumb6_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image7 {
+  background-image: url(../images/thumb-assets/thumb_0003_thumb7_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image8 {
+  background-image: url(../images/thumb-assets/thumb_0002_thumb8_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image9 {
+  background-image: url(../images/thumb-assets/thumb_0001_thumb9_200x200.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.description {
+  width: 224px;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-holder .button {
+  margin-left: 10px;
+}
+
+.button {
+  display: none;
+}
+
+.photo:hover .view,
+.edit,
+.delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 960px) {
+  .photo .view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
